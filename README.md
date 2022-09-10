@@ -11,19 +11,17 @@
 
 The scripts in this template repository can help you get a picture of digesting the SafeGraph format.
 
-### [`eda_safegraph.r`](eda_safegraph.r)
+### [`eda_safegraph.r`](r_examples/eda_safegraph.r)
 
 This script depends on the Tidyverse and has two parsing functions at the top. There are some examples throughout the script of the issues with handling the SafeGraph data. The final `dat_all` object provides the full call that processes the data into a clean nested Tibble.
-### [`eda_safegraph.py`](eda_safegraph.py)
+
+### [`eda_safegraph.py`](python_examples/eda_safegraph.py)
 
 This script depends on the `safegraph_functions.py` file for some functions that can parse the nested dictionaries and lists within the POI. The Python functions create new data objects of the list and dictionary variables within the dataset.
 
 ### API Examples
 
 _You can read additional detail at [APIs/APIs.md](APIs/APIs.md)_
-
-SafeGraph has an API to request data. We will use the API to build our datasets for use in Spark. We can figure out the API locally first.
-
 
 #### [`graphql_noath.py`](APIs/graphql_noauth.py)
 
@@ -44,11 +42,7 @@ load_dotenv()
 sfkey = os.environ.get("SAFEGRAPH_KEY")
 ```
 
-We use three Python packages to get data from SafeGraph - `gql`, `requests`, and `safegraphql`. We elected to signal the start of each type of API request with the package imports spread throughout the script.
-
-We will focus on the `gql` or `requests` examples for our work. We will stay in `gql` and highly recommend that you don't use `graphql`.
-
-#### [`parse_safegraph.py`](parse_safegraph.py)
+#### [`parse_safegraph.py`](python_examples/parse_safegraph.py)
 
 This file creates `.parquet` files for upload for our cloud compute.  In addition, it breaks all the nested data out into their own tables.
 
