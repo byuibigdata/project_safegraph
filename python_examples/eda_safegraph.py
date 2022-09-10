@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import geopandas as gpd
 from plotnine import *
-import safegraph_functions as sgf
+import python_examples.safegraph_functions as sgf
 # %%
 pathLoc = "SafeGraph - Patterns and Core Data - Chipotle - July 2021/Core Places and Patterns Data/chipotle_core_poi_and_patterns.csv"
 dat = pd.read_csv(pathLoc)
