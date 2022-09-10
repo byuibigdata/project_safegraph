@@ -12,7 +12,8 @@ We would like you to leverage the SafeGraph data to support the placement of ret
 2. The retail placement doesn't focus on a specific brand.
 3. The output is either a probability or traffic count.
 4. Decisions for placement can be made at a relatively refined spatial footprint (not predicting at the state level, for example).
-5. Your submission will receive added weight if you exemplify incorporating additional data sets beyond those available from the SafeGraph API.
+5. A proposal of how to use the [OpenWeather API](https://openweathermap.org/price#current) with our tool.
+6. Your submission will receive added weight if you exemplify incorporating additional data sets beyond those available from the SafeGraph.
 
 ## Statement of Work Proposal Guidelines
 
