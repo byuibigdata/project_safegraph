@@ -25,9 +25,6 @@ Your proposal should be no more than two pages and should include the following;
 - Additional data that you will leverage beyond that found in the SafeGraph API
 - Description of what constitutes a successfully implemented product
 
-## SafeGraph account creation
-
-As students and faculty, we get free access to the POI, patterns, and polygons data. You can register [here](https://www.safegraph.com/academics).
 
 ## References
 
