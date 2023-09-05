@@ -17,30 +17,7 @@ This script depends on the Tidyverse and has two parsing functions at the top. T
 
 This script depends on the `safegraph_functions.py` file for some functions that can parse the nested dictionaries and lists within the POI. The Python functions create new data objects of the list and dictionary variables within the dataset.
 
-### API Examples
-
-_You can read additional detail at [APIs/APIs.md](APIs/APIs.md)_
-
-#### [`graphql_noath.py`](APIs/graphql_noauth.py)
-
-An elementary API example of letting you evaluate that your system can make calls to a GraphQL API. It only uses the `requests` package in Python.
-
-#### [`graphql_safegraph.py`](APIs/graphql_safegraph.py)
-
-This script is the more extended and diverse example of using a GraphQL API. Specifically, it provides three examples of requesting data from the SafeGraph API.
-
-Note the use of the following lines of code to store and retrieve our API key correctly. This code is also exemplified in [`create_environ.py`](create_environ.py) script.
-
-
-```python
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-sfkey = os.environ.get("SAFEGRAPH_KEY")
-```
-
-#### [`parse_safegraph.py`](python_examples/parse_safegraph.py)
+#### [`parse_to_parquet_safegraph.py`](python_examples/parse_safegraph.py)
 
 This file creates `.parquet` files for upload for our cloud compute.  In addition, it breaks all the nested data out into their own tables.
 
@@ -66,3 +43,12 @@ SafeGraph has done some work to assess how representative its sample of devices 
 ### Open Census Neighborhood Demographics Data
 
 - [Download Open Census Data & Neighborhood Demographics](https://www.safegraph.com/free-data/open-census-data)
+
+## SafeGraph API Notes
+
+- [safegraphQL](https://pypi.org/project/safegraphQL/)
+- [Places API Overview](https://docs.safegraph.com/reference/places-api-overview-new)
+- [Manage API Keys (SafeGraph)](https://shop.safegraph.com/api/?tab=keys)
+- [Programmatically Call the Places API](https://docs.safegraph.com/reference/programmatically-call-the-places-api)
+- [Search by Industry (NAICS)](https://docs.safegraph.com/reference/search-by-industry)
+- [GraphiQL Explorer](https://docs.safegraph.com/reference/graphiql-explorer-new)

@@ -4,27 +4,25 @@ Businesses that want to leverage this type of data need to see the data value. T
 
 We need a final predictive model accessible by non-technical employees within the designed use case. Carefully documented guides should support this predictive model, data ingestions, data engineering, application development, and process implementation and installation. 
 
-## Temple and Church Building Prediction Model
+## Retail Placement Model
 
-We would like you to leverage the SafeGraph data to build a structure for predicting the next US temple locations. We will use 2019 traffic data to identify a model for locating the announced temples from 2020-2023. Our tool should
+We would like you to leverage the SafeGraph data to support the placement of retail brick-and-mortar locations. This is a proof of concept process, so we are open to your team picking the retail space in line with the following requirements.
 
-1. leverage as much Safegraph patterns data as possible,
-2. use census data, 
-3. predict a probability for each county in the US,
-4. identify validating sources to check our data, and
-5. use the [OpenWeather API](https://openweathermap.org/price#current)
-
-_Your submission will receive added weight if you exemplify incorporating additional data sets beyond those available from the Class._ __But your team needs to find and parse the data for the class to use.__
+1. As much data as possible is leveraged from the SafeGraph source.
+2. The retail placement doesn't focus on a specific brand.
+3. The output is either a probability or a count.
+4. Decisions for placement can be made at a relatively refined spatial footprint (not predicting at the state level, for example).
+5. A proposal of how to use the [OpenWeather API](https://openweathermap.org/price#current) with our tool.
+6. Your submission will receive added weight if you exemplify incorporating additional data sets beyond those available from the SafeGraph.
 
 ## Statement of Work Proposal Guidelines
 
 Your proposal should be no more than two pages and should include the following;
 
 - Team member names and majors
-- A proposal of how you will leverage the data to answer the question
+- Business needs you will address and why this need is of value
 - Explanation of the current SafeGraph data format and some descriptive visualizations
-- Explanation of the Census data
-- Additional data that you will leverage beyond that found in the SafeGraph (if any)
+- Additional data that you will leverage beyond that found in the SafeGraph API
 - Description of what constitutes a successfully implemented product
 
 
